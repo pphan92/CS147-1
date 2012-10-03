@@ -2,6 +2,11 @@
 <html>
 	<head>
 		<title>MyApp</title>
+		<link rel="apple-touch-icon" href="appicon.png" />
+		<link rel="apple-touch-startup-image" href="startup.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-webapp-status-bar-style" content="black"/>
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
 	</head>
 	
 	<style type="text/css">
@@ -24,10 +29,15 @@
 	</style>
 	
 	<body>
-	 		<h2>Rio Akasaka</h2>
+
+		<video width="300" height="240" controls="controls">
+		  <source src="gizmo.mp4" type="video/mp4" />
+		</video>
+	 	<h2>Rio Akasaka</h2>
 		<div id='bio'>Crime-solver. Noir detective extraordinaire.</div>
-	 
-	 	<h3>Assignments</h3>
+	 	<div>
+	 		<h3>Assignments</h3>
+	 	</div>
 		<ul id='assignments'>
 			<li>Go undercover</li>
 			<li>Learn HTML</li>
