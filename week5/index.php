@@ -12,8 +12,8 @@
 
 	<link rel="stylesheet" href="style.css" />
 	<link rel="apple-touch-icon" href="appicon.png" />
-	<link rel="apple-touch-startup-image" href="upstart.png">
-	
+	<link rel="apple-touch-startup-image" href="startup.png">
+	<script src="countdown.js"></script>
 	<script src="jquery-1.8.2.min.js"></script>
 	<script src="jquery.mobile-1.2.0.js"></script>
 
@@ -24,21 +24,19 @@
 
 <!-- Start of first page: #one -->
 <div data-role="page" id="one">
-
 	<div data-role="header">
 		<h1>Multi-Page</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">	
 		<h2>Welcome <span id="username"></span></h2>
-		
+		<p id="countdown"> </p>
 		<p>The neat thing about this example is that you can swipe right and left to navigate between pages, and you can also see in the code that the entire three page sequence within here is bundled into one page.</p>	
 
 		<h3>Show internal pages:</h3>
 		<p><a href="#two" data-role="button">Show page "two"</a></p>	
 		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Show page "popup" (as a dialog)</a></p>
 	</div><!-- /content -->
-	
 	<div data-role="footer" data-id="samebar" class="nav-glyphish-example" data-position="fixed" data-tap-toggle="false">
 		<div data-role="navbar" class="nav-glyphish-example" data-grid="c">
 			<ul>
